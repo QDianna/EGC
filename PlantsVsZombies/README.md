@@ -1,3 +1,5 @@
+# Plants vs Zombies
+
 În cadrul acestei teme am implementat un joc similar cu "Plants vs Zombies", dar adaptat pentru a conține o geometrie simplificata.
 Pe scurt, am creat in functia de initializare elementele corespunzatoare scenei 'stationare', cum ar fi grid-ul, hud-ul, health bar-ul, vietile etc.
 In functia de randare am in permanenta afisate elementele stationare, ale caror coordonate/dimensiuni nu se schimba in timp. Elementele dinamice sunt randate
