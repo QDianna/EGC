@@ -1,11 +1,36 @@
-# Plants vs Zombies
+# Plants vs Zombies (EGC – Elemente de Grafică pe Calculator)
 
-În cadrul acestei teme am implementat un joc similar cu "Plants vs Zombies", dar adaptat pentru a conține o geometrie simplificata.
+Proiect realizat pentru cursul **EGC – Elemente de Grafică pe Calculator**, implementat în **C++ și OpenGL**.  
+Scopul proiectului a fost înțelegerea și aplicarea conceptelor de randare 2D, detecție a coliziunilor și interacțiune utilizator într-un joc simplificat.  
 
-Pe scurt, am creat in functia de initializare elementele corespunzatoare scenei 'stationare', cum ar fi grid-ul, hud-ul, health bar-ul, vietile etc.
-In functia de randare am in permanenta afisate elementele stationare, ale caror coordonate/dimensiuni nu se schimba in timp. Elementele dinamice sunt randate
-dupa logica jocului, fie aleator: hexagoanele inamice, fie dupa o comanda a jucatorului (apasare de buton/tasta): romburile de defence. Elemente precum
-proiectilele sunt randate dinamic, daca anumite criterii sunt indeplinite: jucatorul a plasat un romb de aceeasi culoare cu hexagonul inamic, pe una dintre linii.
+## Descriere
+- **Scena staționară**: grid, HUD, health bar, vieți.  
+- **Elemente dinamice**:
+  - Inamici generați aleator (hexagoane).  
+  - Elemente de apărare plasate de jucător prin comenzi (romburi).  
+  - Proiectile generate dacă apărarea se potrivește cu inamicul de pe linie (culoare + poziție).  
+- **Randare**:
+  - Elemente staționare – afișate permanent.  
+  - Elemente dinamice – randate conform logicii jocului.  
+- **Coliziuni**:
+  - Detectate prin păstrarea coordonatelor elementelor dinamice.  
+  - Se verifică impactul dintre proiectile și inamici, sau dintre inamici și jucător.  
 
-Coliziunile sunt detectate prin prisma faptului ca retin, la orice moment de timp, coordonatele elementelor dinamice din scena, astfel imi pot da seama cu usurinta cand
-un proiectil loveste un hexagon/cand un hexagon a ajuns sa 'loveasca' jucatorul.
+## Funcționalități cheie
+- Plasarea manuală a elementelor defensive.  
+- Generare aleatorie a inamicilor.  
+- Proiectile dinamice condiționate de potrivirea culorilor.  
+- Sistem de coliziuni între obiectele jocului.  
+- Gestionarea vieților și a stării jucătorului.  
+
+## Tehnologii
+- **OpenGL** pentru randare 2D.  
+- C++ pentru logica jocului.  
+
+## Cum rulezi proiectul
+1. Compilează codul sursă C++ cu suport pentru OpenGL (GLUT/GLFW, GLEW).  
+2. Rulează executabilul generat.  
+3. Controlează jocul cu tastele definite (plasare apărare, acțiuni HUD).  
+
+## Concluzie
+Proiectul demonstrează integrarea conceptelor de **randare 2D, detecție de coliziuni și interacțiune utilizator** într-un joc simplificat realizat cu OpenGL.  
