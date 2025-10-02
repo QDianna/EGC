@@ -1,15 +1,32 @@
-# World of Tanks
+# World of Tanks (EGC – Elemente de Grafică pe Calculator)
 
-In cadrul acestei teme am implementat o versiune simplificata, single-player, a jocului World of Tanks.
+Proiect realizat pentru cursul **EGC – Elemente de Grafică pe Calculator**, implementat în **C++ și OpenGL**.  
+Este o versiune simplificată, single-player, a jocului World of Tanks.  
 
-Scena jocului reprezinta un cadru 3D, cu camera pozitionata putin deasupra si in spatele tancului, orientata spre acesta.
-Tancul se poate misca in toate directiile (WASD); camera se poate misca de asemenea de jur imprejurul tancului (RMB HOLD).
-Am creat tancul prin randarea tuturor componentelor sale, create separat: senile, corp, turela si tun, pe care le misc
-in mod sincron pentru a reda ansamlul de obiecte. Aceasta compartimentizare a fost utila atat in crearea geometriei, cat si
-pentru a avea anumite mecanici care sa corespunda partilor individuale ale tankului: turela + tunul se pot roti separat de corp
-pentru ca jucatorul sa poata tinti, tunul poate "genera" proiectile.
+## Descriere
+- Scena 3D cu camera poziționată deasupra și în spatele tancului, orientată spre acesta  
+- Control tanc: deplasare în toate direcțiile (WASD)  
+- Control cameră: rotire liberă în jurul tancului (Right Mouse Button Hold)  
+- Tancul este compus din mai multe componente randate separat (șenile, corp, turelă, tun), animate sincron  
+- Turelă și tun independente: jucătorul poate roti turela și poate trage proiectile  
 
-Am randat cladiri distribuite aleator pe harta, de dimensiuni si culori, de asemenea, aleatoare; am creat si inamici care se misca
-pe o traiectorie predefinita. Tancul jucatorului poate "trage" in tancurile inamice. Detectia coliziunii proiectulului cu inamicul
-este realizata pastrand coordonatele tancurilor la fiecare moment de timp si calculand coordonatele marginii fiecarui corp al fiecarui tanc;
-astfel stiu cand suprafata proiectilului intersecteaza suprafata corpului tancului inamic. Intr-un mod similar detectez si coliziunea proiectilului cu cladirile.
+## Elemente ale scenei
+- Clădiri generate aleator (poziție, dimensiuni, culori)  
+- Inamici care se deplasează pe traiectorii predefinite  
+- Posibilitatea de a trage în inamici și în clădiri  
+
+## Detecția coliziunilor
+- Coordonatele tuturor tancurilor și clădirilor sunt actualizate în timp real  
+- Coliziunea este verificată prin intersectarea suprafeței proiectilului cu suprafața corpului unui tanc sau a unei clădiri  
+
+## Tehnologii
+- OpenGL pentru randare 3D  
+- C++ pentru logica jocului și detecția coliziunilor  
+
+## Cum rulezi proiectul
+1. Compilează codul sursă C++ cu suport OpenGL (GLFW/GLUT, GLEW)  
+2. Rulează executabilul generat  
+3. Controlează tancul cu **WASD**, rotește camera cu **Right Mouse Button Hold**, trage cu tasta implementată pentru proiectile  
+
+## Concluzie
+Proiectul demonstrează utilizarea conceptelor de randare 3D, modelare pe componente, animații sincronizate și detecție a coliziunilor într-un joc simplificat realizat în OpenGL.  
