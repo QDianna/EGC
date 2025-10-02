@@ -16,7 +16,7 @@ Scopul proiectului a fost înțelegerea și aplicarea conceptelor de randare 2D,
   - Detectate prin păstrarea coordonatelor elementelor dinamice.  
   - Se verifică impactul dintre proiectile și inamici, sau dintre inamici și jucător.  
 
-## Funcționalități cheie
+## Funcționalități cheie  
 - Plasarea manuală a elementelor defensive.  
 - Generare aleatorie a inamicilor.  
 - Proiectile dinamice condiționate de potrivirea culorilor.  
